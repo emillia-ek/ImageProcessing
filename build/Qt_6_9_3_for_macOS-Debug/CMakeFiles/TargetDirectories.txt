@@ -1,0 +1,9 @@
+/Users/Emilia/Documents/GitHub/ImageProcessingApp/ImageProcessing/build/Qt_6_9_3_for_macOS-Debug/CMakeFiles/ImageProcessing.dir
+/Users/Emilia/Documents/GitHub/ImageProcessingApp/ImageProcessing/build/Qt_6_9_3_for_macOS-Debug/CMakeFiles/edit_cache.dir
+/Users/Emilia/Documents/GitHub/ImageProcessingApp/ImageProcessing/build/Qt_6_9_3_for_macOS-Debug/CMakeFiles/rebuild_cache.dir
+/Users/Emilia/Documents/GitHub/ImageProcessingApp/ImageProcessing/build/Qt_6_9_3_for_macOS-Debug/CMakeFiles/list_install_components.dir
+/Users/Emilia/Documents/GitHub/ImageProcessingApp/ImageProcessing/build/Qt_6_9_3_for_macOS-Debug/CMakeFiles/install.dir
+/Users/Emilia/Documents/GitHub/ImageProcessingApp/ImageProcessing/build/Qt_6_9_3_for_macOS-Debug/CMakeFiles/install/local.dir
+/Users/Emilia/Documents/GitHub/ImageProcessingApp/ImageProcessing/build/Qt_6_9_3_for_macOS-Debug/CMakeFiles/install/strip.dir
+/Users/Emilia/Documents/GitHub/ImageProcessingApp/ImageProcessing/build/Qt_6_9_3_for_macOS-Debug/CMakeFiles/ImageProcessing_autogen_timestamp_deps.dir
+/Users/Emilia/Documents/GitHub/ImageProcessingApp/ImageProcessing/build/Qt_6_9_3_for_macOS-Debug/CMakeFiles/ImageProcessing_autogen.dir

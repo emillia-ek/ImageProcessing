@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_ImageProcessing_FILE /Users/Emilia/Documents/GitHub/ImageProcessingApp/ImageProcessing/build/Qt_6_9_3_for_macOS-Debug/ImageProcessing.app/Contents/MacOS/ImageProcessing)
+set(__QT_DEPLOY_TARGET_ImageProcessing_TYPE EXECUTABLE)
