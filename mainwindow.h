@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QLabel>
+#include <QScrollArea>
+#include "Image.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -19,5 +22,20 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    //Image img;
+    QImage currentImage;
+    QImage modifiedImage;
+    // QLabel *label;
+    QScrollArea *scrollArea;
+    double scaleFactor;
+
+private slots:
+    void openFile();
+    void invertColors();
+    // void changeBrightness();
+    void openBrightnessDialog();
+    void changeContrast(double factor);
 };
+
+
 #endif // MAINWINDOW_H
