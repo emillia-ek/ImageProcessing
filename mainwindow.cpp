@@ -48,7 +48,7 @@ void MainWindow::openFile()
 
     if (fileName.isEmpty())
         return;
-    static Image img;
+    Image img;
     if (!img.load(fileName.toStdString())) {
         QMessageBox::warning(this, "Błąd", "Nie udało się wczytać obrazu!");
         return;
@@ -68,31 +68,29 @@ void MainWindow::openFile()
         }
     }
 
+    QPixmap pix = QPixmap::fromImage(currentImage);
+
+    ui->label->setAlignment(Qt::AlignCenter);
+
+    ui->label->setPixmap(
+        pix.scaled(ui->label->size(),
+                   Qt::KeepAspectRatio,
+                   Qt::SmoothTransformation)
+        );
     modifiedImage = currentImage;
-    ui->label->setPixmap(QPixmap::fromImage(modifiedImage));
-    ui->label->adjustSize();
+    // ui->label->setPixmap(QPixmap::fromImage(modifiedImage));
+    // ui->label->adjustSize();
 }
 void MainWindow::invertColors() {
     modifiedImage = ImageProcessor::invertColors(modifiedImage);
+    //updateLabel();
     ui->label->setPixmap(QPixmap::fromImage(modifiedImage));
 }
-
-// void MainWindow::changeBrightnessD(int value) {
-//     modifiedImage = ImageProcessor::changeBrightness(currentImage, value);
-//     label->setPixmap(QPixmap::fromImage(modifiedImage));
-// }
 
 void MainWindow::changeContrast(double factor) {
     modifiedImage = ImageProcessor::changeContrast(currentImage, factor);
     ui->label->setPixmap(QPixmap::fromImage(modifiedImage));
 }
-
-// void MainWindow::changeBrightness() {
-//     BrightnessDialog *dialog = new BrightnessDialog(this);
-//     connect(dialog, &BrightnessDialog::valueChanged, this, &MainWindow::adjustBrightness);
-//     dialog->exec();
-// }
-
 
 void MainWindow::openBrightnessDialog() {
     QDialog *dialog = new QDialog(this);
@@ -112,7 +110,6 @@ void MainWindow::openBrightnessDialog() {
         modifiedImage = ImageProcessor::changeBrightness(currentImage, value);
         ui->label->setPixmap(QPixmap::fromImage(modifiedImage));
     });
-
+    currentImage = modifiedImage;
     dialog->exec();
 }
-

@@ -20,27 +20,33 @@
      <height>100</height>
     </size>
    </property>
-   <widget class="QLabel" name="label">
+   <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>50</y>
-      <width>58</width>
-      <height>16</height>
+      <x>30</x>
+      <y>20</y>
+      <width>641</width>
+      <height>491</height>
      </rect>
     </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="text">
-     <string>Label</string>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -130,41 +136,6 @@
       <verstretch>0</verstretch>
      </sizepolicy>
     </property>
-    <widget class="QListWidget" name="listWidget">
-     <property name="geometry">
-      <rect>
-       <x>-10</x>
-       <y>20</y>
-       <width>256</width>
-       <height>192</height>
-      </rect>
-     </property>
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="resizeMode">
-      <enum>QListView::ResizeMode::Adjust</enum>
-     </property>
-     <item>
-      <property name="text">
-       <string>jjj</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>jj</string>
-      </property>
-     </item>
-    </widget>
    </widget>
   </widget>
   <action name="actionHelp">
